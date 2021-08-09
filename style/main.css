@@ -16,6 +16,10 @@ body{
    color:white;
 }
 
+body.light-theme {
+    background: #dddddd;
+    color: #141414;
+}
 
 header .container{
     display:flex;
@@ -38,15 +42,22 @@ header nav a{
     margin-right: 10px;
 }
 
-
 header nav a:hover{
     color:#fff;
+}
+
+body.light-theme header nav a {
+    color: #141414;;
+}
+
+body.light-theme header nav a:hover {
+    color:#9e2323;
 }
 
 /*filme principal*/
 .filme-principal{
     font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-house.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('../img/capa-house.jpg');
 
     height:400px;
     background-size:cover;
@@ -58,6 +69,9 @@ header nav a:hover{
     align-items: flex-start;
 }
 
+body.light-theme .filme-principal {
+    background: linear-gradient(rgba(235, 235, 235, 0.5),rgba(235, 235, 235, 0.5)100%),  url('../img/capa-house.jpg');
+}
 
 .filme-principal .descricao{
     margin-top: 10px;
@@ -83,6 +97,8 @@ header nav a:hover{
     cursor: pointer;
     transition: .3s ease all;
 }
+
+
 
 .botao:hover{
     background-color:white;
